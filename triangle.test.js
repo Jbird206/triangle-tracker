@@ -3,7 +3,7 @@ import { Triangle } from './../src/triangle.js';
 describe('Triangle', () => {
 
     test('should correctly create a triangle object with three lengths', () => {
-        var triangle = new Triangle(2,4,5);
+        let triangle = new Triangle(2,4,5);
         console.log(triangle);
         debugger;
         expect(triangle.side1).toEqual(2);
@@ -12,15 +12,15 @@ describe('Triangle', () => {
       });
       
   test('should correctly determine whether three lengths are not a triangle', () => {
-    var notTriangle = new Triangle(3,9,22);
+    let notTriangle = new Triangle(3,9,22);
     expect(notTriangle.checkType()).toEqual("not a triangle");
   });
   test('should correctly determine whether three lengths make a scalene triangle', function() {
-    var scalTriangle = new Triangle(4,5,7)
+    let scalTriangle = new Triangle(4,5,7)
     expect(scalTriangle.checkType()).toEqual("scalene triangle");
   });
   test('should correctly determine whether three lengths make an isosceles triangle', () => {
-    var isocTriangle = new Triangle(5,5,7)
+    let isocTriangle = new Triangle(5,5,7)
     expect(isocTriangle.checkType()).toEqual("isosceles triangle");
   });
 });

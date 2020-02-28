@@ -18,7 +18,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
 
-      title: 'Ping Pong',
+      title: 'triangle-tracker',
       template: './src/index.html',
       inject: 'body'
     })

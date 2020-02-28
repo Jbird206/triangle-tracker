@@ -2,13 +2,13 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import {triangleTracker} from './triangle';
+import { Triangle } from './triangle';
 
 $(document).ready(function() {
   $('#sides').submit(function(event) {
     event.preventDefault();
-    var goal = $('#goal').val();
-    var output = triangleTracker(goal);
+    let goal = $('#goal').val();
+    let output = Triangle(goal);
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
     });
